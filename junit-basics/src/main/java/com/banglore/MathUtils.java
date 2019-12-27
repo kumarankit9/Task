@@ -10,10 +10,10 @@ public class MathUtils {
 	    return a-b;
 	}
 	
-	public Integer arrayCheck(int ar[])
+	public Integer arrayCheck(Integer ar[])
 	{
-		int arr[]=ar;
-		int max=0;
+		Integer arr[]=ar;
+		Integer max=0;
 		for(int i=0;i<=arr.length-1;i++ )
 		{
 			if(arr[i]>max)
@@ -21,6 +21,23 @@ public class MathUtils {
 			System.out.println(max);
 		}
 		return max;
+	}
+	
+	public Integer checkElement(Integer ar[]) {
+		Integer arr[]=ar;
+		Integer sum=0;
+		Integer totalSum=0;
+		
+		Integer totalNumber=arr.length+1;
+		
+		Integer actualSum=totalNumber * ((totalNumber + 1) / 2);
+		
+		for(Integer array:arr)
+			sum=sum+array;
+		
+		Integer missingNumber=actualSum-sum;
+		
+		return missingNumber;
 		
 	}
 	

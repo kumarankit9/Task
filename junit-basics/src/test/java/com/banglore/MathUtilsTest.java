@@ -34,8 +34,17 @@ public class MathUtilsTest {
 	@Test
 	public void testArrayCheck() {
 		
-		int expected=4;
-		int actual=mathutils.arrayCheck(new int[]{1,3,4,2});
+		Integer expected=4;
+		Integer actual=mathutils.arrayCheck(new Integer[]{1,3,4,2});
+		assertEquals(expected, actual);
+		System.out.println("test case ran");
+	}
+	
+	@Test
+	public void testcheckElement() {
+		
+		Integer expected=5;
+		Integer actual=mathutils.checkElement(new Integer[] {2,4,1,3});
 		assertEquals(expected, actual);
 		System.out.println("test case ran");
 	}
