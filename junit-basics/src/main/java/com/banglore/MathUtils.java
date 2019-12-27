@@ -18,6 +18,7 @@ public class MathUtils {
 		{
 			if(arr[i]>max)
 				max=arr[i];
+			System.out.println(max);
 		}
 		return max;
 		
