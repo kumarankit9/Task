@@ -24,24 +24,17 @@ public class MathUtils {
 	}
 	
 	public Integer checkElement(Integer ar[]) {
-		Integer arr[]=ar;
-		Integer sum=0;
-		Integer totalSum=0;
-		
-		Integer totalNumber=arr.length+1;
-		
-		Integer actualSum=totalNumber * ((totalNumber + 1) / 2);
-		
-		for(Integer array:arr)
-			sum=sum+array;
-		
-		Integer missingNumber=actualSum-sum;
-		
+		Integer arr[] = ar;
+		Integer sum = 0;
+		Integer totalNumber = arr.length + 1;
+
+		Integer actualSum = totalNumber * ((totalNumber + 1) / 2);
+
+		for (Integer array : arr) {
+			sum = sum + array;
+		}
+		Integer missingNumber = actualSum - sum;
 		System.out.println(missingNumber);
 		return missingNumber;
-		
-		
-		
 	}
-	
 }
