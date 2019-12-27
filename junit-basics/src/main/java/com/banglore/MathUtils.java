@@ -3,7 +3,9 @@ package com.banglore;
 public class MathUtils {
    
 	public int add(int a,int b) {
+		System.out.println("addition done");
 	    return a+b;
+	    
 	}
 	
 	public int sub(int a,int b) {
