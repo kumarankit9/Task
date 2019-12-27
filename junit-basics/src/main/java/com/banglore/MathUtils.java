@@ -37,7 +37,10 @@ public class MathUtils {
 		
 		Integer missingNumber=actualSum-sum;
 		
+		System.out.println(missingNumber);
 		return missingNumber;
+		
+		
 		
 	}
 	
